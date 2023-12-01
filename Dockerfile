@@ -1,6 +1,9 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11-slim
 
+# Ensure the package database is up to date
+RUN apt-get update
+
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
