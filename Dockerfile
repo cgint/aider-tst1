@@ -9,10 +9,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /app_root
 
-# Copy the current directory contents into the container at /usr/src/app
-COPY . /usr/src/app
+# Copy the current directory contents into the container at /app_root
+COPY . .
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
