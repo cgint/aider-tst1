@@ -1,8 +1,0 @@
-
-version: '3.8'
-
-services:
-  merge-service:
-    build: .
-    volumes:
-      - ./data:/app/input # Mount the host data directory to the container
