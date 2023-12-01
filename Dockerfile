@@ -1,4 +1,3 @@
-# Use an official Python runtime as a parent image
 FROM python:3.11-slim
 
 # Ensure the package database is up to date and install security updates
@@ -10,7 +9,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
-WORKDIR /app_root
+WORKDIR /app
 
 # Copy the current directory contents into the container at /usr/src/app
 COPY . .
