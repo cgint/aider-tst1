@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This script builds a Docker image and runs a container with volume mounts for input and output files.
+# Add a new comment here to explain what the script does
+
+docker build -t solution-image .
+
+docker run --rm --name solution-container -v "$(pwd)/input:/usr/src/app/input" -v "$(pwd)/output:/usr/src/app/output" solution-image
