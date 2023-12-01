@@ -6,8 +6,3 @@ services:
     build: .
     volumes:
       - ./data:/app/input # Mount the host data directory to the container
-    environment:
-      - FILE1=/app/input/task1/t1.csv
-      - FILE2=/app/input/task1/t2.csv
-      - OUTPUT_FILE=/app/input/task1/out.csv
-      - JOIN_COLUMN=common_id
