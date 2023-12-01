@@ -9,9 +9,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
-WORKDIR /app_root
+WORKDIR /app
 
-# Copy the current directory contents into the container at /app_root
+# Copy the current directory contents into the container at /app
 COPY . .
 
 # Install any needed packages specified in requirements.txt
