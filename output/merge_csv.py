@@ -7,4 +7,4 @@ def merge_csv_files(input_dir, output_file):
     merged.to_csv(output_file, index=False)
 
 if __name__ == "__main__":
-    merge_csv_files("../input/task1", "./output/out.csv")
+    merge_csv_files("/usr/src/app/input/task1", "/usr/src/app/output/out.csv")
